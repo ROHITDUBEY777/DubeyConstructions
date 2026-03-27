@@ -1,5 +1,4 @@
 import { PenTool, Eye, Map } from 'lucide-react';
-import './Services.css';
 
 export default function Services() {
   const services = [
@@ -21,25 +20,29 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="section-padding bg-light">
-      <div className="container">
+    <section id="services" className="py-20 bg-light">
+      <div className="container px-6 mx-auto">
         <div className="text-center mb-12">
-          <div className="badge mb-4">Our Expertise</div>
-          <h2 className="section-title">Comprehensive <span className="text-secondary">Civil Engineering</span> Services</h2>
-          <p className="section-subtitle">
+          <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+            Our Expertise
+          </div>
+          <h2 className="text-3xl md:text-4xl text-primary font-bold mb-4 leading-tight">
+            Comprehensive <span className="text-secondary">Civil Engineering</span> Services
+          </h2>
+          <p className="text-[1.15rem] text-muted max-w-[600px] mx-auto">
             From the first blueprint to the final brick, we provide expert guidance at every step.
           </p>
         </div>
 
-        <div className="services-grid">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="service-card">
-              <div className="service-icon">
+            <div key={index} className="group flex flex-col h-full bg-white p-10 rounded-xl shadow-sm border border-slate-200 transition-all duration-300 hover:-translate-y-2.5 hover:shadow-xl hover:border-secondary/30">
+              <div className="w-[4.5rem] h-[4.5rem] bg-primary text-white rounded-lg flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-secondary group-hover:scale-110 group-hover:rotate-6">
                 {service.icon}
               </div>
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-desc">{service.desc}</p>
-              <a href="#contact" className="service-link">
+              <h3 className="text-primary text-2xl font-bold mb-4">{service.title}</h3>
+              <p className="text-muted mb-6 grow">{service.desc}</p>
+              <a href="#contact" className="inline-flex items-center text-primary font-semibold no-underline text-base transition-colors duration-200 hover:text-secondary group-hover:text-secondary">
                 Learn more &rarr;
               </a>
             </div>

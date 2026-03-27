@@ -1,54 +1,61 @@
 import { CheckCircle2, Award, Briefcase } from 'lucide-react';
-import './About.css';
 
 export default function About() {
   return (
-    <section id="about" className="section-padding bg-white">
-      <div className="container about-container">
-        <div className="about-image-wrapper">
+    <section id="about" className="py-20 bg-white">
+      <div className="container px-6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="relative inline-block w-[80%] mx-auto lg:w-full">
           <img 
             src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2062&auto=format&fit=crop" 
             alt="Experienced Civil Engineer on Site" 
-            className="about-img"
+            className="w-full h-[500px] rounded-2xl shadow-xl object-cover"
           />
-          <div className="experience-badge">
-            <div className="exp-number">32+</div>
-            <div className="exp-text">Years of<br/>Experience</div>
+          <div className="absolute -bottom-6 left-0 right-0 mx-auto w-[80%] md:right-[-2rem] md:left-auto md:w-auto bg-primary text-white p-6 md:px-8 md:py-6 rounded-xl shadow-lg flex justify-center items-center gap-4 border-4 border-white">
+            <div className="text-[3.5rem] font-bold leading-none text-secondary">32+</div>
+            <div className="font-semibold leading-tight text-[1.1rem]">Years of<br/>Experience</div>
           </div>
         </div>
         
-        <div className="about-content">
-          <div className="badge mb-4">About the Founder</div>
-          <h2 className="section-title">
+        <div>
+          <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+            About the Founder
+          </div>
+          <h2 className="text-3xl md:text-4xl text-primary font-bold mb-6 leading-tight">
             Over three decades of <span className="text-secondary">Building Trust</span> and strong foundations.
           </h2>
-          <p className="about-desc">
+          <p className="text-lg text-muted mb-4">
             Led by a highly experienced Civil Engineer with a lifetime dedicated to perfection in structural integrity and aesthetic design. With over 32 years of hands-on site experience, our founder has successfully overseen the completion of more than 4,000 buildings across the region.
           </p>
-          <p className="about-desc mb-6">
+          <p className="text-lg text-muted mb-8">
             We don't just build houses; we build homes with precise planning, rigorous site supervision, and an unwavering commitment to quality.
           </p>
           
-          <div className="stats-grid">
-            <div className="stat-item">
-              <Award className="stat-icon" />
+          <div className="flex flex-col gap-6 mt-8 pt-8 border-t border-slate-200">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 p-2.5 bg-secondary/10 text-secondary rounded-full flex items-center justify-center shrink-0">
+                <Award size={24} />
+              </div>
               <div>
-                <h4 className="stat-title">4000+</h4>
-                <p className="stat-label">Buildings Completed</p>
+                <h4 className="text-xl font-bold text-primary mb-0.5">4000+</h4>
+                <p className="text-[0.95rem] text-muted m-0">Buildings Completed</p>
               </div>
             </div>
-            <div className="stat-item">
-              <CheckCircle2 className="stat-icon" />
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 p-2.5 bg-secondary/10 text-secondary rounded-full flex items-center justify-center shrink-0">
+                <CheckCircle2 size={24} />
+              </div>
               <div>
-                <h4 className="stat-title">100%</h4>
-                <p className="stat-label">Quality Assurance</p>
+                <h4 className="text-xl font-bold text-primary mb-0.5">100%</h4>
+                <p className="text-[0.95rem] text-muted m-0">Quality Assurance</p>
               </div>
             </div>
-            <div className="stat-item">
-              <Briefcase className="stat-icon" />
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 p-2.5 bg-secondary/10 text-secondary rounded-full flex items-center justify-center shrink-0">
+                <Briefcase size={24} />
+              </div>
               <div>
-                <h4 className="stat-title">32+ Years</h4>
-                <p className="stat-label">Core Site Expertise</p>
+                <h4 className="text-xl font-bold text-primary mb-0.5">32+ Years</h4>
+                <p className="text-[0.95rem] text-muted m-0">Core Site Expertise</p>
               </div>
             </div>
           </div>

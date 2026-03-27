@@ -1,5 +1,4 @@
 import { Check } from 'lucide-react';
-import './Pricing.css';
 
 export default function Pricing() {
   const plans = [
@@ -42,43 +41,51 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="section-padding bg-white">
-      <div className="container">
+    <section id="pricing" className="py-20 bg-white">
+      <div className="container px-6 mx-auto">
         <div className="text-center mb-12">
-          <div className="badge mb-4">Transparent Pricing</div>
-          <h2 className="section-title">Affordable & <span className="text-secondary">Value-Driven</span> Plans</h2>
-          <p className="section-subtitle">
+          <div className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+            Transparent Pricing
+          </div>
+          <h2 className="text-3xl md:text-4xl text-primary font-bold mb-4 leading-tight">
+            Affordable & <span className="text-secondary">Value-Driven</span> Plans
+          </h2>
+          <p className="text-[1.15rem] text-muted max-w-[600px] mx-auto">
             Choose the level of guidance your project needs, with no hidden costs.
           </p>
         </div>
 
-        <div className="pricing-grid">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           {plans.map((plan, index) => (
-            <div key={index} className={`pricing-card ${plan.recommended ? 'recommended' : ''}`}>
-              {plan.recommended && <div className="pricing-badge">Best Value</div>}
-              
-              <div className="pricing-header">
-                <h3 className="pricing-name">{plan.name}</h3>
-                <div className="pricing-price">
-                  <span className="currency">₹</span>
-                  <span className="amount">{plan.price}</span>
+            <div key={index} className={`relative flex flex-col bg-white border rounded-2xl p-8 md:p-12 transition-all duration-300 shadow-sm ${plan.recommended ? 'border-2 border-secondary shadow-lg md:scale-105 hover:-translate-y-1 md:hover:scale-105 md:hover:-translate-y-1' : 'border-slate-200 hover:-translate-y-1 hover:shadow-xl'}`}>
+              {plan.recommended && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white px-6 py-2 rounded-full font-bold text-sm tracking-wider uppercase shadow-md">
+                  Best Value
                 </div>
-                <p className="pricing-desc">{plan.description}</p>
+              )}
+              
+              <div className="mb-auto">
+                <h3 className="text-2xl text-dark mb-4 font-bold">{plan.name}</h3>
+                <div className="flex items-start text-primary mb-4">
+                  <span className="text-2xl font-semibold mt-2 mr-1">₹</span>
+                  <span className="text-[3.5rem] font-extrabold leading-none tracking-tight">{plan.price}</span>
+                </div>
+                <p className="text-base text-muted mb-8 min-h-[3rem]">{plan.description}</p>
               </div>
               
-              <div className="pricing-body">
-                <ul className="pricing-features">
+              <div className="mb-10 grow">
+                <ul className="list-none flex flex-col m-0 p-0">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="feature-list-item">
-                      <Check className="feature-check" size={20} />
+                    <li key={i} className="flex items-start gap-3 mb-4 text-dark font-medium">
+                      <Check className="text-secondary shrink-0 mt-0.5" size={20} />
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               
-              <div className="pricing-footer">
-                <a href="#contact" className={`btn ${plan.recommended ? 'btn-primary' : 'btn-outline'} w-full`}>
+              <div className="mt-auto">
+                <a href="#contact" className={`inline-flex items-center justify-center w-full py-4 rounded-md font-semibold text-lg transition-all ${plan.recommended ? 'bg-secondary text-white hover:bg-[#E0851A] hover:-translate-y-0.5 shadow-md' : 'bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white'}`}>
                   Book Now
                 </a>
               </div>
