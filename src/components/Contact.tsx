@@ -28,7 +28,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="contact-item-title">Phone</h4>
-                  <p className="contact-item-value">+91 99999 99999</p>
+                  <p className="contact-item-value">+91 94481 09495</p>
                 </div>
               </div>
 
@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="contact-item-title">Email</h4>
-                  <p className="contact-item-value">info@dubeyconstructions.com</p>
+                  <p className="contact-item-value">dubeyconstructions@gmail.com</p>
                 </div>
               </div>
 
@@ -48,7 +48,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="contact-item-title">Location</h4>
-                  <p className="contact-item-value">City/Village, State, India - 000000</p>
+                  <p className="contact-item-value">Basavakalyan Bidar Karnataka India - 585327 </p>
                 </div>
               </div>
 
@@ -82,9 +82,9 @@ export default function Contact() {
                 <label htmlFor="service" className="form-label">Service Interested In</label>
                 <select id="service" className="form-control" required>
                   <option value="" disabled selected>Select a Service</option>
-                  <option value="planning">Building Planning (₹6000)</option>
-                  <option value="supervision-3">Standard Supervision (₹9000)</option>
-                  <option value="supervision-full">Complete Supervision (₹11000)</option>
+                  <option value="planning">Building Planning (₹10000)</option>
+                  <option value="supervision-3">Standard Supervision (₹12000)</option>
+                  <option value="supervision-full">Complete Supervision (₹15000)</option>
                   <option value="other">Other Inquiry</option>
                 </select>
               </div>

@@ -4,8 +4,8 @@ import './Pricing.css';
 export default function Pricing() {
   const plans = [
     {
-      name: 'Basic Planning',
-      price: '6000',
+      name: ' Planning + Markout-onsite',
+      price: '10000',
       description: 'Essential accurate site marking and layout plan.',
       features: [
         'Precise Plot Marking Out',
@@ -16,7 +16,7 @@ export default function Pricing() {
     },
     {
       name: 'Standard Care',
-      price: '9000',
+      price: '12000',
       description: 'Marking out plus crucial phase site supervision.',
       features: [
         'Precise Plot Marking Out',
@@ -28,7 +28,7 @@ export default function Pricing() {
     },
     {
       name: 'Complete Supervision',
-      price: '11000',
+      price: '15000',
       description: 'End-to-end supervision from marking to completion.',
       features: [
         'Precise Plot Marking Out',
