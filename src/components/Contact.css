@@ -1,0 +1,141 @@
+.contact-section {
+  background-color: var(--background-light);
+  border-top: 1px solid var(--border-color);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  background-color: var(--background-white);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+@media (min-width: 992px) {
+  .contact-layout {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.contact-info-wrapper {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info-wrapper::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-dark {
+  color: var(--primary-color);
+}
+
+.contact-info-desc {
+  color: #CBD5E1;
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.contact-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.contact-item-value {
+  color: #CBD5E1;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Form Styles */
+.contact-form-wrapper {
+  padding: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact-info-wrapper,
+  .contact-form-wrapper {
+    padding: 2rem;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.form-control {
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: var(--background-light);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(1, 30, 65, 0.1);
+  background-color: white;
+}
+
+.btn-submit {
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
