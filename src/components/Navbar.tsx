@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Building2 } from 'lucide-react';
-
+import logo from "../assets/logo.jpeg"
+import logo2 from "../assets/logo2.jpeg"
+import logo3 from "../assets/logo3.jpeg"
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,7 +27,8 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 w-full z-[1000] py-6 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md !py-4 shadow-sm' : 'bg-transparent'}`}>
       <div className="container flex justify-between items-center px-6 mx-auto">
         <div className={`flex items-center gap-2 no-underline ${isScrolled ? 'text-primary' : 'text-white'}`}>
-          <Building2 className="w-8 h-8 text-secondary" />
+          {/* <logo className="w-8 h-8 text-secondary" /> */}
+          <img src={logo2} className='w-12 h-12  ' alt="" />
           <span className="text-xl font-bold tracking-tight">Dubey Constructions</span>
         </div>
 

@@ -107,7 +107,7 @@ export default function Contact() {
                   <option value="" disabled>Select a Service</option>
                   <option value="planning">Building Planning (₹10000)</option>
                   <option value="supervision-3">Standard Supervision (₹12000)</option>
-                  <option value="supervision-full">Complete Supervision (₹15000)</option>
+                  <option value="supervision-full">Complete Supervision (2% of Total Building Cost)</option>
                   <option value="other">Other Inquiry</option>
                 </select>
               </div>

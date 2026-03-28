@@ -11,7 +11,7 @@ export default function Testimonials() {
     {
       name: 'Priya Sharma',
       role: 'Property Developer',
-      quote: 'The accuracy in marking out the plot is unmatched. Having an engineer with 32 years of experience oversee our projects has completely changed our construction quality.',
+      quote: 'The accuracy in marking out the plot is unmatched. Having an engineer with 38 years of experience oversee our projects has completely changed our construction quality.',
       rating: 5
     },
     {

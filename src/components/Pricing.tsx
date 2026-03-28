@@ -27,7 +27,7 @@ export default function Pricing() {
     },
     {
       name: 'Complete Supervision',
-      price: '15000',
+      price: 'Total-2% of Building Cost ',
       description: 'End-to-end supervision from marking to completion.',
       features: [
         'Precise Plot Marking Out',
@@ -65,10 +65,10 @@ export default function Pricing() {
               )}
               
               <div className="mb-auto">
-                <h3 className="text-2xl text-dark mb-4 font-bold">{plan.name}</h3>
-                <div className="flex items-start text-primary mb-4">
-                  <span className="text-2xl font-semibold mt-2 mr-1">₹</span>
-                  <span className="text-[3.5rem] font-extrabold leading-none tracking-tight">{plan.price}</span>
+                <h3 className="text-xl text-dark mb-4 font-bold">{plan.name}</h3>
+                <div className="flex  items-start text-primar y mb-4">
+                  <span className="text-2xl font-semibold  mr-1">₹</span>
+                  <span className="text-3xl py-auto  md:text-[2rem] font-extrabold leading-none tracking-tight">{plan.price}</span>
                 </div>
                 <p className="text-base text-muted mb-8 min-h-[3rem]">{plan.description}</p>
               </div>

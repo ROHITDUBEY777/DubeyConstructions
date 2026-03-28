@@ -5,7 +5,7 @@ export default function WhyChooseUs() {
     {
       icon: <UserCheck size={28} />,
       title: 'Experienced Civil Engineer',
-      desc: '32+ years of on-ground structural knowledge and 4000+ completed projects.',
+      desc: '38+ years of on-ground structural knowledge and 4000+ completed projects.',
     },
     {
       icon: <Wallet size={28} />,
