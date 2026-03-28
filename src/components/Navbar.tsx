@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Building2 } from 'lucide-react';
-import logo from "../assets/logo.jpeg"
+import { Menu, X } from 'lucide-react';
+// import logo from "../assets/logo.jpeg"
 import logo2 from "../assets/logo2.jpeg"
-import logo3 from "../assets/logo3.jpeg"
+// import logo3 from "../assets/logo3.jpeg"
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
